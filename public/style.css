@@ -25,11 +25,6 @@
     gap: 5rem;
     margin-top: 10rem;
 }
-.welcome{
-    font-size: 4rem;
-    color: #F53D47;
-    font-weight: bold;
-}
 
 .button{
     border: none;
@@ -64,42 +59,39 @@
 #title-web{
     margin: 3rem auto;
     font-size: 3.5rem;
-    color:  #F53D47 ;
-    margin-left: -7%;
+    color:  white ;
 
-}
-form{
-    margin: 3rem auto;
 }
 #search-form{
     margin-right: 1rem;
     width: 40%;
     height: 2.5rem;
-    border-radius: 1rem;
-    border: 1px solid  #F53D47 ;
+    border-radius: 5px 5px 0px 0px;
     border: none;
     box-shadow: 0px 0px 3px 3px #ccc;
+    padding-left: 10px;
+    font-size: 15px;
 }
-#submit-form, #Watch-button{
+#submit-form, .Watch-button{
     
     width: 5rem;
     height: 2.5rem;
-    border-radius: 1rem;
+    border-radius: 10px;
     border: none;
     background-color: #F53D47 ;
     color: #fff;
-    font-family: 'Rubik Distressed', cursive;
+    /* font-family: 'Rubik Distressed', cursive; */
 
 }
 #submit-form:hover {
     background-color: #eb262f ;
     cursor: pointer;
 }
-#icon{
+.fa-star{
     color: gold;
 }
 
-#Watch-button:hover {
+.Watch-button:hover {
     background-color: #eb262f ;
     cursor: pointer;
 }
@@ -111,7 +103,7 @@ form{
     margin-top: 5rem;
     margin-bottom: 1rem;
 }
-#movie-img{
+.movie-img{
     width: 12rem;
     height: 15rem;
    margin-bottom: 3rem;
@@ -129,4 +121,31 @@ form{
 }
 .about p{
     margin-bottom: 2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.list{
+    width: 40%;
+    background-color: white;
+    border-radius:  0px 0px 5px 5px ;
+    border: none;
+    /* margin: 0 auto; */
+    margin-left: 20rem;
+}
+
+.list-item{
+    padding: 10px ;
+    text-align: left;
+    cursor: pointer;
+}
+
+.list-item:hover{
+    background-color: #e3e3e3;
+}
+.main-body{
+    height: 92vh;
+    background: linear-gradient(135deg,#F53D47, #e3e3e3)
 }
