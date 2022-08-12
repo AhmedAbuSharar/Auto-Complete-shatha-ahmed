@@ -48,4 +48,43 @@ describe("router test", () => {
         done();
       });
   });
+
+  test("when endpoint has a value equal /public/main.html", (done) => {
+    supertest(router)
+      // expect.assertions(1)
+      .get("/public/main.html")
+      .expect(200)
+      .expect("Content-Type", /htm/)
+      .end((err, res) => {
+        if (err) return done(err);
+        expect(res.statusCode).toBe(200);
+        done();
+      });
+  });
+  
+  test('when endpoint has a value equal /public/JS/logic.js', (done) => {
+    supertest(router)
+      // expect.assertions(1)
+      .get('/public/JS/logic.js')
+      .expect(200)
+      .expect('Content-Type', 'text/javascript')
+      .end((err, res) => {
+        if (err) return done(err);
+        expect(res.statusCode).toBe(200);
+        done();
+      });
+  });
+  
+  test('when endpoint has a value equal /public/style.css', (done) => {
+    supertest(router)
+      // expect.assertions(1)
+      .get('/public/style.css')
+      .expect(200)
+      .expect('Content-Type', /css/)
+      .end((err, res) => {
+        if (err) return done(err);
+        expect(res.statusCode).toBe(200);
+        done();
+      });
+  });
 });
