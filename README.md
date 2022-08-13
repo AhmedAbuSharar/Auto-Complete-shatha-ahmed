@@ -5,7 +5,7 @@
 Movie Night is an website specially built for the user to search their favorite movies. This website enables users to quickly find and select movie from a list of suggestions, as they type. will be like a movie keeper where the user is able to find and download the movies that they like.
 
 ## Live Link 
-You can check the website [Here](https://ca-g12.github.io/Auto-Complete-shatha-ahmed/).
+You can check the website [Here](https://auto-aomplete-ahatha-ahmed.herokuapp.com/).
 
 
 ## API and JSON file we used
